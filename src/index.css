@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap');
+@import "tailwindcss";
+
+.container {
+	max-width: 1640px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.b {
+	border: 1px solid red;
+}
+
+body {
+	--font-family: "Roboto", sans-serif;
+}
+
+:root {
+	--color_primary: #274C5B;
+	--color_green: #7EB693;
+	--color_yellow: #efd372;;
+	--color_gray: #D4D4D4;
+	--color_smoke: #F9F8F8;
+	--color_lightGreen: #EFF6F1;
+	--color_dark: #525C60;
+
+	--font-family: "Roboto", sans-serif;
+	--second-family: "Open Sans", sans-serif;
+	--third-family: "Yellowtail", sans-serif;
+	--font3: "Inter", sans-serif;
+}
+
+@theme inline {
+	--color-primary: var(--color_primary);
+	--color-green: var(--color_green);
+	--color-yellow: var(--color_yellow);
+	--color-gray: var(--color_gray);
+	--color-smoke: var(--color_smoke);
+	--color-ligthGreen: var(--color_lightGreen);
+	--color-dark: var(--color_dark);
+
+	--font-primary: var(--font-family);
+	--font-secondary: var(--font-secondary);
+	--font-third: var(--third-family);
+	--font-inter: var(--font3);
+}
+
+.h1 {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 70px;
+	color: #274c5b;
+}
+
+.h2 {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 50px;
+	color: #274c5b;
+}
+
+.h3 {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 40px;
+	color: #274c5b;
+}
+
+.h4 {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 35px;
+	color: #274c5b;
+}
+
+.h5 {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 30px;
+	color: #274c5b;
+}
+
+.h6 {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 25px;
+	color: #274c5b;
+}
+
+.paragraph {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 165%;
+	color: #525c60;
+}
+
+.list {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 165%;
+	color: #525c60;
+}
+
+.quotes {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 165%;
+	text-align: center;
+	color: #274c5b;
+}
