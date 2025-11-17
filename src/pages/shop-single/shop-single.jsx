@@ -4,11 +4,15 @@ import { Button } from "../../components/button";
 import { Hero } from "../../components/hero";
 import notFound from "../../assets/images/shopSingle.png";
 import { Star } from "../../assets/icons/star.jsx";
-import { useState } from "react";
+import React, { useState } from "react";
 import { ProductCard } from "../../components/product-card.jsx";
 import shop from "../../assets/images/shopSingle.png";
 
 export const ShopSingle = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [count, setCount] = useState(1);
 
   const handleIncrement = () => {
@@ -45,8 +49,8 @@ export const ShopSingle = () => {
   }
 
   return (
-	  <>
-		<Hero image={shop} title={"Shop Single"}/>
+    <>
+      <Hero image={shop} title={"Shop Single"} />
 
       <section className="py-10">
         <div className="container">
@@ -136,8 +140,8 @@ export const ShopSingle = () => {
       </section>
 
       <section className="max-w-[1400px] mx-auto mb-[140px]">
-			  <h1 className="h1 text-center mb-10">Related Products</h1>
-			  
+        <h1 className="h1 text-center mb-10">Related Products</h1>
+
         <div className="grid grid-cols-4 gap-5">
           {products.slice(0, 4).map((item) => (
             <div className="w-full h-full">
@@ -153,8 +157,7 @@ export const ShopSingle = () => {
               />
             </div>
           ))}
-			  </div>
-			  
+        </div>
       </section>
     </>
   );
