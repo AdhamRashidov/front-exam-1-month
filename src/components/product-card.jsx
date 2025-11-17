@@ -12,7 +12,7 @@ export const ProductCard = ({
   img,
 }) => {
   return (
-    <div className="relative w-[335px] h-full bg-smoke rounded-3xl">
+    <div className="relative w-[335px] h-full bg-white rounded-3xl shadow-lg hover:shadow-2xl">
       <Link to={`/shop-single/${id}`}>
         <div className="border border-smoke rounded-3xl">
           <div className="absolute top-5 left-5">
